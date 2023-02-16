@@ -177,7 +177,7 @@ def faceDetection():
     if (view == "json"):
         return jsonify(ResponseData)
     else:
-        return "<img src='data:image/png;base64," + b64_string.decode() + "' alt='Red dot' /> <br> <img src='data:image/png;base64," + ResponseData["faces_Data"][0]["box_face"] + "' alt='Red dot' /> <img src='data:image/png;base64," + ResponseData["faces_Data"][1]["box_face"] + "' alt='Red dot' />"
+        return "<img src='data:image/png;base64," + b64_string.decode() + "' alt='Red dot' /> <br> <img src='data:image/png;base64," + ResponseData["faces_Data"][0]["box_face"] + "' alt='Red dot' />"
     
 
 if __name__ == '__main__':
